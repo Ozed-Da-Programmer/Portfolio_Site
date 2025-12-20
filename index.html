@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #fbfbfc;
+            font-size: 1.1rem;
+        }
+
+        header {
+            background-color: #020c15;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        main {
+            margin: 10px 0;
+            padding: 5px 10px;
+        }
+
+        .sect {
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding: 5px 20px;
+        }
+
+        audio, video {
+            display: block;
+            margin: 20px auto;
+        }
+
+        video {
+            height: clamp(12rem,50vw, 20rem);
+        }
+
+        form {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 7px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            background-color: #020c15;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        
+        button:hover {
+            background-color: #032146;
+        }
+
+        footer {
+            text-align: center;
+            padding: 6px;
+            background-color: #020c15;
+            color: whitesmoke;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            border: 3px solid rgb(1, 1, 15);
+            box-shadow: 0px 0px 5px rgb(201, 193, 193);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="/avatar.png" alt="My Profile Photo">
+            <h1>Hi, I'm <span class="nowrap">Osaze Tony</span></h1>
+            <p>A student passionate about technology, creativity and learning new skills.</p>
+        </div>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Reading</li>
+                <li>Graphic Design</li>
+                <li>Listening to Music</li>
+            </ul>
+        </section>
+
+        <section class="sect">
+            <h2>Sample Song - Inconsciousness by Mini Vandals
+            </h2>
+            <audio controls>
+                <source src="/Inconsciousness - Mini Vandals.mp3" type="audio/mpeg">
+            </audio>
+
+            <h2>Sample Video Clip - Nature </h2>
+            <video controls>
+                <source src="/nature_vid.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="sect">
+            <h2>Contact Me:</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="6"></textarea required>
+
+                <button type="submit">Send Message</button>
+
+                <button type="reset">Clear All</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PrimeX Productions &trade;</p>
+    </footer>
+</body>
+</html>
